@@ -40,10 +40,47 @@
 # new_insect = Insect.new(5878)
 # new_insect.year_calc
 
-class Lamp
-  def self.about_me
-    puts "we brighten up people's lives."
+# class Lamp
+#   def self.about_me
+#     puts "we brighten up people's lives."
+#   end
+# end
+
+# Lamp.about_me
+
+# class WaterBottle
+#   def initialize(size)
+#     @size = size
+#   end
+# end
+
+# class Person
+#   def initialize(age)
+#     @age = age
+#   end
+
+#   def age=(new_age)
+#     @age = new_age
+#   end
+
+#   def put_age
+#     puts @age
+#   end
+# end
+
+# this_guy = Person.new(3)
+
+# this_guy.put_age
+
+module MathHelper
+  def multiply_by_two(num)
+     puts num * 2
   end
 end
 
-Lamp.about_me
+class Homework
+  include MathHelper
+end
+
+mathz = Homework.new
+mathz.multiply_by_two(8)

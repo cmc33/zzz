@@ -10,7 +10,19 @@
 
 #   end
 # end
+def fizzbuzz(num)
+  if num % 5 == 0 && num % 3 == 0
+    puts "fizzbuzz!"
+  elsif num % 3 != 0 and num % 5 != 0
+    puts "WompWomp"
+  elsif num % 3 == 0
+    puts "Fizz"
+  elsif num % 5 == 0
+    puts "Buzz"
+  end
+end
 
+fluh = fizzbuzz(7)
 
 # class Dog
 #   def initialize(name)
@@ -72,15 +84,4 @@
 
 # this_guy.put_age
 
-module MathHelper
-  def multiply_by_two(num)
-     puts num * 2
-  end
-end
-
-class Homework
-  include MathHelper
-end
-
-mathz = Homework.new
-mathz.multiply_by_two(8)
+# 
